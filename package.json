@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "karma start karma.conf.js",
+    "clean": "rm -rf dist/*",
     "build": "rollup -c rollup.config.js",
     "prepublish": "yarn clean && yarn build"
   },
